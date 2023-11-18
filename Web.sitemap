@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="" title="Home"  description="">
+    <siteMapNode url="~/Login.aspx" title="Login"  description="LoginPage" />
+    <siteMapNode url="~/TransferMoney.aspx" title="Transfer Money"  description="Transfer Money to SomeOne" />
+	  <siteMapNode url="~/ViewBalance.aspx" title="ViewBalance" description="Balance To Account">
+		  <siteMapNode url="~/history.aspx" title="Transaction History" description="Transaction History"/>
+		  <siteMapNode url="https://www.bajajfinserv.in/check-free-cibil-score" title="Check Cibil" description="Check Cibil"/>
+		  <siteMapNode url="~/settings.aspx" title="Settings" description="Settings"/>
+	  </siteMapNode>
+  </siteMapNode>
+</siteMap>

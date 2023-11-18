@@ -1,0 +1,58 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MyOwnSite.master.cs" Inherits="LookAndFeelDemo.MyOwnSite" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+            background-color: #00FFFF;
+        }
+        .auto-style2 {
+            width: 218px;
+        }
+        .auto-style3 {
+            height: 53px;
+        }
+    </style>
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+    
+            <table class="auto-style1">
+                <tr>
+                    <td class="auto-style2">
+                        <asp:Image ID="Image2" runat="server" ImageUrl="~/Content/logo.jpg" Width="464px" Height="220px" />
+                    </td>
+                    <td>&nbsp;</td>
+                    <td>
+                             <asp:Image ID="Image3" runat="server" ImageUrl="~/Content/logo.jpg" />
+                        <hr />
+                                                <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1">
+                        </asp:Menu>
+                        <br />
+                        <br />
+                        <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style3" colspan="3">
+                        <asp:ContentPlaceHolder ID="pageContent" runat="server" ></asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <asp:Label ID="Label1" runat="server" Text="copyrightsdfsfsfsf"></asp:Label>
+                    </td>
+                </tr>
+            </table>
+    
+        </div>
+    </form>
+</body>
+</html>
